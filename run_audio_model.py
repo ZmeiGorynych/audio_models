@@ -77,7 +77,8 @@ fit(train_gen = audio_gen_train,
     scheduler = scheduler,
     epochs = epochs,
     loss_fn = loss,
-    save_path=save_path)
+    save_path=save_path,
+    dashboard='Audio model')
 #
 # # now try creating a new model and loading the old weights
 # model_2 = to_gpu(Net(true_w.shape))
